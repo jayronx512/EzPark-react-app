@@ -53,7 +53,7 @@ const HomePage = () => {
 
     const history = useHistory()
 
-    let API_KEY = process.env.REACT_APP_API
+    // let API_KEY = process.env.REACT_APP_API
 
     useEffect(() => {
         // performing a GET request
@@ -77,7 +77,7 @@ const HomePage = () => {
         e.preventDefault()
         Axios({
             method: 'post',
-            url: `${API_KEY}features/layout`,
+            url: `http://ezpark-next.herokuapp.com/api/v1/features/layout`,
             data: {
                 mall: `${mallName.name}`
             }
