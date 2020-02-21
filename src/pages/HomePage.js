@@ -57,7 +57,7 @@ const HomePage = () => {
 
     useEffect(() => {
         // performing a GET request
-        Axios.get(`${API_KEY}features/`)
+        Axios.get(`http://ezpark-next.herokuapp.com/api/v1/features/`)
             .then(result => {
                 // If successful, we do stuffs with 'result'
                 setMall(result.data.mall)
