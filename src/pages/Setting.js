@@ -74,7 +74,7 @@ const SettingPage = () => {
     const handleSubmit = e => {
         e.preventDefault()
         Axios({
-            url: `http://ezpark-next.herokuapp.com/api/v1/users/${info.api_url}`,
+            url: `https://ezpark-next.herokuapp.com/api/v1/users/${info.api_url}`,
             method: 'POST',
             headers: {
                 Authorization: `Bearer ${localStorage.jwt}`
